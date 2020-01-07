@@ -13,7 +13,7 @@ function buyGoldPerClick() {
   if (gameData.gold >= gameData.goldPerClickCost) {
     gameData.gold -= gameData.goldPerClickCost;
     gameData.goldPerClick += 1;
-    gameData.goldPerClickCost *= 2;
+    gameData.goldPerClickCost *= 0.2;
     document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined";
     document.getElementById("perClickUpgrade").innerHTML = "Upgrade Pickaxe (Currently Level " + gameData.goldPerClick + ") Cost: " + gameData.goldPerClickCost + " Gold";
   }
