@@ -15,6 +15,7 @@ function mineGold() {
   gameData.gold += gameData.goldMineRate;
     
   document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined";
+  document.getElementById("goldMineRate").innerHTML = "Gold Mine Rate: " + gameData.goldMineRate;
 }
 
 function buyGoldPerClick() {
