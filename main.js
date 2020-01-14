@@ -20,6 +20,10 @@ function buyGoldPerClick() {
   }
 }
 
+function ClearSavedGame() {
+  localStorage.removeItem("goldMinerSave");
+}
+
 var saveGameLoop = window.setInterval(function() {
   localStorage.setItem('goldMinerSave', JSON.stringify(gameData));
 }, 15000)
