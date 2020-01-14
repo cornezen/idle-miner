@@ -19,7 +19,7 @@ function mineGold() {
 }
 
 function buyGoldPerClick() {
-  gameData.goldPerClickCost = Math.floor(10 * Math.pow(1.1, gameData.goldPerClick));
+  //gameData.goldPerClickCost = Math.floor(10 * Math.pow(1.1, gameData.goldPerClick));
   if (gameData.gold >= gameData.goldPerClickCost) {
     gameData.gold -= gameData.goldPerClickCost;
     gameData.goldPerClick += 1;
@@ -30,7 +30,7 @@ function buyGoldPerClick() {
 }
 
 function buyGoldPerClick2() {
-  gameData.goldPerClick2Cost = Math.floor(100 * Math.pow(1.1, gameData.goldPerClick2));
+  //gameData.goldPerClick2Cost = Math.floor(100 * Math.pow(1.1, gameData.goldPerClick2));
   if (gameData.gold >= gameData.goldPerClick2Cost) {
     gameData.gold -= gameData.goldPerClick2Cost;
     gameData.goldPerClick2 += 2;
